@@ -9,7 +9,7 @@ The only thing to change from the default torrc is the following line:
 Run the following command to build the docker image.
 
 ```bash
-docker build -t simeononsecurity/docker-tor-relay-middle .
+docker build -t simeononsecurity/docker-tor-bridge .
 ```
 
  
@@ -19,7 +19,7 @@ docker run -d \
 --restart always \
 -p 9050:9050 \
 --name torproxy \
-simeononsecurity/docker-tor-relay-middle:latest
+simeononsecurity/docker-tor-bridge:latest
 ``` 
 
 ## TEST
