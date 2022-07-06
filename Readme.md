@@ -18,8 +18,8 @@ docker build -t simeononsecurity/docker-tor-bridge .
 docker run -d \
 --restart always \
 -p 9050:9050 \
---name torproxy \
-simeononsecurity/docker-tor-bridge
+--name torrelay \
+simeononsecurity/docker-tor-relay-exit:latest
 ``` 
 
 ## TEST
