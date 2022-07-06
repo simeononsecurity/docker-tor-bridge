@@ -3,7 +3,7 @@ File: /torrc.default
 
 The only thing to change from the default torrc is the following line:
 
-SocksPort 0.0.0.0:9050
+```SocksPort 0.0.0.0:9050```
 
 ## BUILD THE DOCKER IMAGE
 Run the following command to build the docker image.
