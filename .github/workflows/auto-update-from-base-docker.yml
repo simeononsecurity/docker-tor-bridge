@@ -1,8 +1,9 @@
 name: Docker Base Auto Update CI
 
 on:
-  schedule:
-  - cron: "23 13 3 * *"
+  branches: [ relay-middle ]
+    schedule:
+    - cron: "23 13 3 * *"
 
   build:
 
