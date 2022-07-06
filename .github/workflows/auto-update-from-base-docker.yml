@@ -21,6 +21,8 @@ on:
     -
         name: Checkout
         uses: actions/checkout@v3
+        with:
+          ref: relay-exit
         if: steps.check.outputs.needs-updating == 'true'
     -
         name: Set up QEMU
