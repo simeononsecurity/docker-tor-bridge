@@ -16,7 +16,7 @@ on:
       uses: lucacome/docker-image-update-checker@v1
       with:
         base-image: library/alpine:latest
-        image: simeononsecurity/docker-tor-relay:latest
+        image: simeononsecurity/docker-tor-bridge:latest
     -
         name: Checkout
         uses: actions/checkout@v3
@@ -41,7 +41,7 @@ on:
         if: steps.check.outputs.needs-updating == 'true'
     - 
       name: Build the Docker image
-      run: docker run --rm --privileged multiarch/qemu-user-static --reset -p yes && docker buildx build --platform linux/amd64,linux/arm64 -t simeononsecurity/docker-tor-relay:latest --progress=plain --push .
+      run: docker run --rm --privileged multiarch/qemu-user-static --reset -p yes && docker buildx build --platform linux/amd64,linux/arm64 -t simeononsecurity/docker-tor-bridge:latest --progress=plain --push .
       if: steps.check.outputs.needs-updating == 'true'
     -
         name: Build and push
@@ -49,5 +49,5 @@ on:
         with:
           context: .
           push: true
-          tags: simeononsecurity/docker-tor-relay:latest
+          tags: simeononsecurity/docker-tor-bridge:latest
         if: steps.check.outputs.needs-updating == 'true'
