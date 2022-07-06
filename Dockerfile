@@ -1,5 +1,6 @@
 FROM alpine:latest
 LABEL org.opencontainers.image.source="https://github.com/simeononsecurity/docker-tor-bridge/tree/relay-middle"
+LABEL org.opencontainers.image.description="Quickly Spin up a Tor Middle/Guard Node"
 RUN apk update && apk add \
     tor \
     --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
