@@ -18,7 +18,7 @@ docker build -t simeononsecurity/docker-tor-relay-exit:latest .
 docker run -d \
 --restart always \
 -p 9050:9050 \
---name torproxy \
+--name torrelay \
 simeononsecurity/docker-tor-relay-exit:latest
 ``` 
 
