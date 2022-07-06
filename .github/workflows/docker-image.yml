@@ -54,4 +54,4 @@ jobs:
     - name: Build the hello-world Docker image
       run: |
         docker build . --tag ghcr.io/simeononsecurity/docker-tor-bridge:latest
-        docker push ghcr.io/simeononsecurity/docker-tor-bridge:latest
+        docker push ./ ghcr.io/simeononsecurity/docker-tor-bridge:latest
