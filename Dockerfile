@@ -1,4 +1,5 @@
 FROM alpine:latest
+LABEL org.opencontainers.image.source="https://github.com/simeononsecurity/docker-tor-bridge/tree/relay-exit"
 RUN apk update && apk add \
     tor \
     --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
