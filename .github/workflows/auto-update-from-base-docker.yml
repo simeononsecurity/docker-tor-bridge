@@ -1,7 +1,6 @@
 name: Docker Base Auto Update CI
 
 on:
-  branches: [ relay-middle ]
     schedule:
     - cron: "23 13 3 * *"
 
@@ -21,6 +20,8 @@ on:
     -
         name: Checkout
         uses: actions/checkout@v3
+        with:
+          ref: relay-middle
         if: steps.check.outputs.needs-updating == 'true'
     -
         name: Set up QEMU
