@@ -1,7 +1,7 @@
 FROM alpine:latest
 LABEL org.opencontainers.image.source="https://github.com/simeononsecurity/docker-tor-bridge"
 LABEL org.opencontainers.image.description="Quickly Spin up a Tor Bridge"
-
+LABEL org.opencontainers.image.authors="simeononsecurity"
 RUN apk update && apk add \
     tor \
     --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
