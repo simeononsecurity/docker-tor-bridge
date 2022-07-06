@@ -17,7 +17,7 @@
 ## as a relay, and not make any local application connections yourself.
 #SOCKSPort 9050 # Default: Bind to localhost:9050 for local connections.
 #SOCKSPort 192.168.0.1:9100 # Bind to this address:port too.
-SocksPort 0.0.0.0:9050
+SOCKSPort 0
 
 ## Entry policies to allow/deny SOCKS requests based on IP address.
 ## First entry that matches wins. If no SOCKSPolicy is set, we accept
@@ -180,11 +180,11 @@ SocksPort 0.0.0.0:9050
 ## exit policy (or whatever exit policy you set below).
 ## (If ReducedExitPolicy, ExitPolicy, or IPv6Exit are set, relays are exits.
 ## If none of these options are set, relays are non-exits.)
-#ExitRelay 1
+ExitRelay 1
 
 ## Uncomment this if you want your relay to allow IPv6 exit traffic.
 ## (Relays do not allow any exit traffic by default.)
-#IPv6Exit 1
+IPv6Exit 1
 
 ## Uncomment this if you want your relay to be an exit, with a reduced set
 ## of exit ports.
