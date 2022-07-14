@@ -6,7 +6,7 @@ RUN apk update && apk add \
     tor \
     --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     && rm -rf /var/cache/apk/*
-EXPOSE 9050
+EXPOSE 9001
 COPY torrc.default /etc/tor/torrc.default
 RUN chown -R tor /etc/tor
 USER tor
