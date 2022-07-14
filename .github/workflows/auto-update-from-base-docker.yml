@@ -2,7 +2,7 @@ name: Docker Base Auto Update CI
 
 on:
   schedule:
-  - cron: "23 13 3 * *"
+    - cron: "23 13 3 * *"
 jobs:
   build:
 
