@@ -30,5 +30,4 @@ Get your current ip
 Get your ip through the tor socks proxy
 
 ```curl --socks5 http://localhost:9050 -L http://ifconfig.me```
-
  
