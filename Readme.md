@@ -17,5 +17,4 @@ docker run -d \
 simeononsecurity/docker-tor-relay-exit:latest
 ``` 
 
-
  
