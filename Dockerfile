@@ -3,7 +3,7 @@ LABEL org.opencontainers.image.source="https://github.com/simeononsecurity/docke
 LABEL org.opencontainers.image.description="Quickly Spin up a Tor Exit Node"
 LABEL org.opencontainers.image.authors="simeononsecurity"
 RUN apk update && apk add \
-    tor \
+    tor nyx\
     --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     && rm -rf /var/cache/apk/*
 EXPOSE 9001
