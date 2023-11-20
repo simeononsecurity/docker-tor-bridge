@@ -146,7 +146,7 @@ ORPort 9001
 ##
 #ContactInfo Random Person <nobody AT example dot com>
 ## You might also include your PGP or GPG fingerprint if you have one:
-ContactInfo Docker Node simeononsecurity/docker-tor-bridge <noreply@simeononsecurity.com> @ator: 0x5DDDb4Da4D87757bB22ee6427A4b361c4f68db72
+ContactInfo Docker Node simeononsecurity/docker-tor-bridge
 
 ## Uncomment this to mirror directory information for others. Please do
 ## if you have enough bandwidth.
